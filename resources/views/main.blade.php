@@ -7,14 +7,14 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <title>Free Education Template</title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
     <link rel="stylesheet" href="{{asset('css/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('css/flexslider.css')}}">
-
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+    <!-- Google	Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
 </head>
 <body >
 
@@ -26,7 +26,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"><img class="logo-custom" src="assets/img/logo180-50.png" alt=""  /></a>
+            <a class="navbar-brand" href="#"><img class="logo-custom" src="{{asset('picture/logo.png')}}" alt=""  /></a>
         </div>
         <div class="navbar-collapse collapse move-me">
             <ul class="nav navbar-nav navbar-right">
@@ -45,7 +45,6 @@
     <div class="overlay">
         <div class="container">
             <div class="row text-center " >
-
                 <div class="col-lg-12  col-md-12 col-sm-12">
 
                     <div class="flexslider set-flexi" id="main-section" >
@@ -180,6 +179,42 @@
 
     </div>
 </div>
+<div id="features-sec" class="container set-pad" >
+    <div class="row text-center">
+        <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+            <h1 data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line">
+                LIST OF COURSES </h1>
+            <p data-scroll-reveal="enter from the bottom after 0.3s" >
+
+            </p>
+        </div>
+
+    </div>
+    <!--/.HEADER LINE END-->
+
+
+    <div class="row" >
+
+
+        <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
+            <div class="about-div">
+                @yield('khoahoc1');
+            </div>
+        </div>
+        <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
+            <div class="about-div">
+                @yield('khoahoc2');
+            </div>
+        </div>
+        <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
+            <div class="about-div">
+                @yield('khoahoc3');
+            </div>
+        </div>
+
+
+    </div>
+</div>
 <!-- FEATURES SECTION END-->
 <div id="faculty-sec" >
     <div class="container set-pad">
@@ -202,7 +237,7 @@
 
             <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
                 <div class="faculty-div">
-                    <img src="assets/img/faculty/1.jpg"  class="img-rounded" />
+                    <img src="{{asset('img/faculty/1.jpg')}}"  class="img-rounded" />
                     <h3 >ROXI CHI LUENA </h3>
                     <hr />
                     <h4>Desigining <br /> Department</h4>
@@ -215,7 +250,7 @@
             </div>
             <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
                 <div class="faculty-div">
-                    <img src="assets/img/faculty/2.jpg"  class="img-rounded" />
+                    <img src="{{asset('img/faculty/2.jpg')}}"  class="img-rounded" />
                     <h3 >JANE DEO ALEX</h3>
                     <hr />
                     <h4>Enginering <br /> Department</h4>
@@ -228,7 +263,7 @@
             </div>
             <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
                 <div class="faculty-div">
-                    <img src="assets/img/faculty/3.jpg" class="img-rounded" />
+                    <img src="{{asset('img/faculty/3.jpg')}}" class="img-rounded" />
                     <h3 >RUBY DECORSA</h3>
                     <hr />
                     <h4>Management <br /> Department</h4>
@@ -379,7 +414,7 @@
 
             <h2 ><strong>Our Location </strong></h2>
             <hr />
-            <div ">
+            <div>
             <h4>234/80 -UFG , New Street,</h4>
             <h4>Switzerland.</h4>
             <h4><strong>Call:</strong>  + 67-098-907-1269 / 70 / 71 </h4>
@@ -406,14 +441,10 @@
 <div id="footer">
     &copy 2014 yourdomain.com | All Rights Reserved |  <a href="http://binarytheme.com" style="color: #fff" target="_blank">Design by : binarytheme.com</a>
 </div>
-<!-- FOOTER SECTION END-->
-
-<!--  Jquery Core Script -->
 <script  href="{{ asset('js/bootstrap.js') }}"></script>
 <script  href="{{ asset('js/custom.js') }}"></script>
 <script  href="{{ asset('js/jquery.easing.min.js') }}"></script>
 <script  href="{{ asset('js/jquery.flexslider.js') }}"></script>
 <scrift  href="{{ asset('js/scrollReaveal.js') }}"></scrift>
-
 </body>
 </html>
