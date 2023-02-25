@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -195,7 +195,7 @@
 
     <div class="row" >
 
-
+        {{ csrf_field() }}
         <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
             <div class="about-div">
                 @yield('khoahoc1');
@@ -203,16 +203,14 @@
         </div>
         <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
             <div class="about-div">
-                @yield('khoahoc2');
+                @yield('khoahoc2')-
             </div>
         </div>
         <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
             <div class="about-div">
-                @yield('khoahoc3');
+                @yield('khoahoc3')-
             </div>
         </div>
-
-
     </div>
 </div>
 <!-- FEATURES SECTION END-->

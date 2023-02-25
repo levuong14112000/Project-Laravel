@@ -17,3 +17,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/main',[\App\Http\Controllers\myController::class,'main']);
+Route::get('/khoahoc1',[\App\Http\Controllers\myController::class,'detail1']);
+Route::get('/khoahoc2',[\App\Http\Controllers\myController::class,'detail']);
+Route::get('/khoahoc3',[\App\Http\Controllers\myController::class,'detail3']);
