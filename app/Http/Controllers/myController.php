@@ -1,6 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\courses;
+use App\Models\subject;
+use App\Models\users;
+use App\Models\usersroloes;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -17,13 +21,28 @@ class myController extends Controller
         return view('khoahoc')->with('ds',$query);
     }
     public function detail1(){
-        return view('detailkhoahoc1');
+        $courses = courses::all();
+        $subject = subject::all();
+        $users = users::all();
+        $usersroloes = usersroloes::all();
+        return view('detailkhoahoc1')->with('courses',$courses )->with('subject',$subject)
+            ->with('users',$users )->with('usersroloes',$usersroloes);
     }
     public function detail2(){
-        return view('detailkhoahoc2');
+        $courses = courses::all();
+        $subject = subject::all();
+        $users = users::all();
+        $usersroloes = usersroloes::all();
+        return view('detailkhoahoc1')->with('courses',$courses )->with('subject',$subject)
+            ->with('users',$users )->with('usersroloes',$usersroloes);
     }
     public function detail3(){
-        return view('detailkhoahoc3');
+        $courses = courses::all();
+        $subject = subject::all();
+        $users = users::all();
+        $usersroloes = usersroloes::all();
+        return view('detailkhoahoc1')->with('courses',$courses )->with('subject',$subject)
+            ->with('users',$users )->with('usersroloes',$usersroloes);
     }
 
 }
