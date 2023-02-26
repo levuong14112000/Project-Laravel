@@ -16,33 +16,36 @@ class myController extends Controller
     public function khoahoc(){
         $query =DB::table('courses') //Sử dụng class DB
         ->select("course_id","course_name","description","price","picture")
+            //
             ->orderBy('course_name','ASC')
             ->get();
-        return view('khoahoc')->with('ds',$query);
+        $query1 =DB::table('users') //Sử dụng class DB
+            ->join('subject','users.user_id','=','subject.user_id')
+            ->join('courses','subject.course_id','=','courses.course_id')
+            ->select("*")
+            ->get();
+        return view('khoahoc')->with('ds',$query)->with('ds1',$query1);
     }
     public function detail1(){
-        $courses = courses::all();
-        $subject = subject::all();
-        $users = users::all();
-        $usersroloes = usersroloes::all();
-        return view('detailkhoahoc1')->with('courses',$courses )->with('subject',$subject)
-            ->with('users',$users )->with('usersroloes',$usersroloes);
+        $query =DB::table('subject') //Sử dụng class DB
+        ->select("course_id","subject_name","content","picture")
+            ->orderBy('subject_name','ASC')
+            ->get();
+        return view('detailkhoahoc1')->with('ds',$query );
     }
     public function detail2(){
-        $courses = courses::all();
-        $subject = subject::all();
-        $users = users::all();
-        $usersroloes = usersroloes::all();
-        return view('detailkhoahoc1')->with('courses',$courses )->with('subject',$subject)
-            ->with('users',$users )->with('usersroloes',$usersroloes);
+        $query =DB::table('subject') //Sử dụng class DB
+        ->select("course_id","subject_name","content","picture")
+            ->orderBy('subject_name','ASC')
+            ->get();
+        return view('detailkhoahoc2')->with('ds',$query );
     }
     public function detail3(){
-        $courses = courses::all();
-        $subject = subject::all();
-        $users = users::all();
-        $usersroloes = usersroloes::all();
-        return view('detailkhoahoc1')->with('courses',$courses )->with('subject',$subject)
-            ->with('users',$users )->with('usersroloes',$usersroloes);
+        $query =DB::table('subject') //Sử dụng class DB
+        ->select("course_id","subject_name","content","picture")
+            ->orderBy('subject_name','ASC')
+            ->get();
+        return view('detailkhoahoc3')->with('ds',$query );
     }
 
 }
