@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -47,51 +47,6 @@
             <div class="row text-center " >
                 <div class="col-lg-12  col-md-12 col-sm-12">
 
-                    <div class="flexslider set-flexi" id="main-section" >
-                        <ul class="slides move-me">
-                            <!-- Slider 01 -->
-                            <li>
-                                <h3>Delivering Quality Education</h3>
-                                <h1>THE UNIQUE METHOD</h1>
-                                <a  href="#features-sec" class="btn btn-info btn-lg" >
-                                    GET AWESOME
-                                </a>
-                                <a  href="#features-sec" class="btn btn-success btn-lg" >
-                                    FEATURE LIST
-                                </a>
-                            </li>
-                            <!-- End Slider 01 -->
-
-                            <!-- Slider 02 -->
-                            <li>
-                                <h3>Delivering Quality Education</h3>
-                                <h1>UNMATCHED APPROACH</h1>
-                                <a  href="#features-sec" class="btn btn-primary btn-lg" >
-                                    GET AWESOME
-                                </a>
-                                <a  href="#features-sec" class="btn btn-danger btn-lg" >
-                                    FEATURE LIST
-                                </a>
-                            </li>
-                            <!-- End Slider 02 -->
-
-                            <!-- Slider 03 -->
-                            <li>
-                                <h3>Delivering Quality Education</h3>
-                                <h1>AWESOME FACULTY PANEL</h1>
-                                <a  href="#features-sec" class="btn btn-default btn-lg" >
-                                    GET AWESOME
-                                </a>
-                                <a  href="#features-sec" class="btn btn-info btn-lg" >
-                                    FEATURE LIST
-                                </a>
-                            </li>
-                            <!-- End Slider 03 -->
-                        </ul>
-                    </div>
-
-
-
 
                 </div>
 
@@ -118,12 +73,6 @@
     <div class="row text-center">
         <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
             <h1 data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line">FEATURE LIST </h1>
-            <p data-scroll-reveal="enter from the bottom after 0.3s" >
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo.
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo.
-            </p>
         </div>
 
     </div>
@@ -131,8 +80,6 @@
 
 
     <div class="row" >
-
-
         <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
             <div class="about-div">
                 <i class="fa fa-paper-plane-o fa-4x icon-round-border" ></i>
@@ -140,8 +87,8 @@
                 <hr />
                 <hr />
                 <p >
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo .
+                    Education quality is the fulfillment of the goals of the educational institution or educational program, and the requirements of the Law on Education, the Law amending and supplementing a number of articles of the Law on Education, the Law on Higher Education. , in line with the needs of using human resources for the socio-economic development of the locality and the whole country.
+
 
                 </p>
                 <a href="#" class="btn btn-info btn-set"  >ASK THE EXPERT</a>
@@ -154,8 +101,7 @@
                 <hr />
                 <hr />
                 <p >
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo .
+                    A systematic approach is often used at projects in the workplace. The goal of this approach is to identify the most efficient means of generating consistent and optimum results. Various companies need this kind of approach for them to equip employees with enough knowledge and resources to achieve the company's goal.
 
                 </p>
                 <a href="#" class="btn btn-info btn-set"  >ASK THE EXPERT</a>
@@ -168,8 +114,9 @@
                 <hr />
                 <hr />
                 <p >
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo .
+                    “One to One” – The method of learning which is no longer strange in the world, but in Vietnam it is always thought as a form of tutoring (the teacher is the amateur students)
+
+                    This is a method of learning with qualified native English-speaking teachers not only bring efficiency but also convenience for learners.
 
                 </p>
                 <a href="#" class="btn btn-info btn-set"  >ASK THE EXPERT</a>
@@ -182,11 +129,7 @@
 <div id="features-sec" class="container set-pad" >
     <div class="row text-center">
         <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-            <h1 data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line">
-                LIST OF COURSES </h1>
-            <p data-scroll-reveal="enter from the bottom after 0.3s" >
-
-            </p>
+            <h1 data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line">COURSES </h1>
         </div>
 
     </div>
@@ -194,23 +137,26 @@
 
 
     <div class="row" >
-
-        {{ csrf_field() }}
         <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
             <div class="about-div">
-                @yield('khoahoc1');
+                <img class="fa-4x img-thumbnail" src="{{asset('picture/khoa-hoc-ky-nang-mem-cho-sinh-vien.jpg')}}" alt="">
+              @yield('khoahoc1')
             </div>
         </div>
         <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
             <div class="about-div">
-                @yield('khoahoc2')-
+                <img class="fa-4x img-thumbnail" src="{{asset('picture/khoa-hoc-marketing-online-moavn.jpg')}}" alt="">
+                @yield('khoahoc2')
             </div>
         </div>
-        <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
+        <div class="col-lg-4  col-md-4 col-sm-4"  data-scroll-reveal="enter from the bottom after 0.6s">
             <div class="about-div">
-                @yield('khoahoc3')-
+                <img class="fa-4x img-thumbnail" src="{{asset('picture/khoa-hoc-tin-hoc-van-phong-min.jpg')}}" alt="">
+                @yield('khoahoc3')
             </div>
         </div>
+
+
     </div>
 </div>
 <!-- FEATURES SECTION END-->
@@ -218,12 +164,9 @@
     <div class="container set-pad">
         <div class="row text-center">
             <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-                <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">OUR FACULTY </h1>
-                <p data-scroll-reveal="enter from the bottom after 0.3s">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo.
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                    Aenean commodo.
+                <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">
+                    TYPICAL FACE</h1>
+                <p data-scroll-reveal="enter from the bottom after 0.3s">Successful typical faces in the previous year
                 </p>
             </div>
 
@@ -231,47 +174,9 @@
         <!--/.HEADER LINE END-->
 
         <div class="row" >
-
-
-            <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
-                <div class="faculty-div">
-                    <img src="{{asset('img/faculty/1.jpg')}}"  class="img-rounded" />
-                    <h3 >ROXI CHI LUENA </h3>
-                    <hr />
-                    <h4>Desigining <br /> Department</h4>
-                    <p >
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Aenean commodo .
-
-                    </p>
-                </div>
+                @yield('hocsinh')
             </div>
-            <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
-                <div class="faculty-div">
-                    <img src="{{asset('img/faculty/2.jpg')}}"  class="img-rounded" />
-                    <h3 >JANE DEO ALEX</h3>
-                    <hr />
-                    <h4>Enginering <br /> Department</h4>
-                    <p >
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Aenean commodo .
-
-                    </p>
-                </div>
-            </div>
-            <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
-                <div class="faculty-div">
-                    <img src="{{asset('img/faculty/3.jpg')}}" class="img-rounded" />
-                    <h3 >RUBY DECORSA</h3>
-                    <hr />
-                    <h4>Management <br /> Department</h4>
-                    <p >
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Aenean commodo .
-
-                    </p>
-                </div>
-            </div>
+        </div>
 
         </div>
     </div>
@@ -280,22 +185,17 @@
 <div id="course-sec" class="container set-pad">
     <div class="row text-center">
         <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
-            <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">OUR COURSES </h1>
+            <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">MORE COURSES </h1>
             <p data-scroll-reveal="enter from the bottom after 0.3s">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo.
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                Aenean commodo.
+                In addition to the above courses, we also have many other courses
             </p>
         </div>
 
     </div>
     <!--/.HEADER LINE END-->
-
-
     <div class="row set-row-pad" >
         <div class="col-lg-6 col-md-6 col-sm-6 " data-scroll-reveal="enter from the bottom after 0.4s" >
-            <img src="assets/img/building.jpg" class="img-thumbnail" />
+            <img src="{{asset('img/building.jpg')}}" alt="" class="img-thumbnail">
         </div>
         <div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
             <div class="panel-group" id="accordion">
@@ -366,11 +266,7 @@
             <div class="row text-center">
                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line" >CONTACT US  </h1>
-                    <p data-scroll-reveal="enter from the bottom after 0.3s">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Aenean commodo.
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                        Aenean commodo.
+                    <p data-scroll-reveal="enter from the bottom after 0.3s">If you have any questions, please contact us
                     </p>
                 </div>
 
@@ -397,11 +293,6 @@
                     </form>
                 </div>
 
-
-
-
-
-
             </div>
         </div>
     </div>
@@ -426,9 +317,9 @@
         <h2 ><strong>Social Conectivity </strong></h2>
         <hr />
         <div >
-            <a href="#">  <img src="assets/img/Social/facebook.png" alt="" /> </a>
-            <a href="#"> <img src="assets/img/Social/google-plus.png" alt="" /></a>
-            <a href="#"> <img src="assets/img/Social/twitter.png" alt="" /></a>
+            <a href="#">  <img src="{{asset('img/Social/facebook.png')}}" alt="" /> </a>
+            <a href="#"> <img src="{{asset('img/Social/google-plus.png')}}" alt="" /></a>
+            <a href="#"> <img src="{{asset('img/Social/twitter.png')}}" alt="" /></a>
         </div>
     </div>
 
@@ -437,12 +328,13 @@
 </div>
 <!-- CONTACT SECTION END-->
 <div id="footer">
-    &copy 2014 yourdomain.com | All Rights Reserved |  <a href="http://binarytheme.com" style="color: #fff" target="_blank">Design by : binarytheme.com</a>
+    &copy 2014 | All Rights Reserved |  <a href="http://binarytheme.com" style="color: #fff" target="_blank">Design by : classes-team</a>
 </div>
 <script  href="{{ asset('js/bootstrap.js') }}"></script>
 <script  href="{{ asset('js/custom.js') }}"></script>
+<script  href="{{ asset('js/jquery-1.10.2.js') }}"></script>
 <script  href="{{ asset('js/jquery.easing.min.js') }}"></script>
 <script  href="{{ asset('js/jquery.flexslider.js') }}"></script>
-<scrift  href="{{ asset('js/scrollReaveal.js') }}"></scrift>
+<script  href="{{ asset('js/scrollReveal.js') }}"></script>
 </body>
 </html>
